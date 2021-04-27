@@ -1,0 +1,13 @@
+body {
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/img/ada.jpg);
+	  background-size: cover;
+      height: 650px;
+      
+}
+.container {
+ 	margin-top: 8%;
+ 	box-shadow: 0 3px 28px rgba(0,0,0,0.5);
+ 	padding: 40px;
+ 	border-radius: 25px;
+ 	color: white;
+}

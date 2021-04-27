@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bukti Group</title>
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	{% include "navbar.html" %}
+	{% if pendakian_group %}
+	<div class="container">
+		<br><br>
+
+		<h2 align="center">Pendakian Group Anda</h2>
+		<hr><br>	
+		<h2>Pendakian Group Anda</h2>
+		<div class="row">
+			{% for formulir in pendakian_group %}
+			<div class="col-sm">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Atas Nama {{ formulir.nama}}</h5>
+						<hr>    
+						<p class="card-text">Provinsi asal : {{formulir.provinsi}}</p>
+						<p class="card-text">Tujuan ke gunung : {{formulir.tujuan}}</p>
+						<p class="card-text">Status : {{formulir.konfirmasi}}</p>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#example{{formulir.id}}">
+							Detail
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- Button trigger modal -->
+
+
+			<!-- Modal -->
+			<div class="modal fade" id="example{{formulir.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog  modal-dialog-scrollable">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Data Anda</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<table class="table table-dark">
+								<thead>
+									<tr>
+										<th scope="col" colspan="4">Atas Nama {{formulir.nama}}</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">NIK</th>
+										<td>{{formulir.jumlah_pendaki}}</td>
+									</tr>
+									<tr>
+										<th scope="row">NIK</th>
+										<td>{{formulir.nik}}</td>
+									</tr>
+									<tr>
+										<th scope="row">Provinsi</th>
+										<td>{{formulir.provinsi}}</td>
+									</tr>
+									<tr>
+										<th scope="row">Tujuan</th>
+										<td>Gunung{{formulir.tujuan}}</td>
+									</tr>
+									<tr>
+										<th scope="row">Naik Menggunakan</th>
+										<td>{{formulir.naik}}</td>
+									</tr>
+									<tr>
+										<th scope="row">Turun menggunakan</th>
+										<td>{{formulir.turun}}</td>
+									</tr>
+									<tr>
+										<th scope="row">Tanggal Naik</th>
+										<td>{{formulir.tgl_naik}}</td>
+									</tr>
+									<tr>
+										<th scope="row">Tanggal Turun</th>
+										<td>{{formulir.tgl_turun}}</td>
+									</tr>
+									<tr>
+										<th scope="row">Alamat Email</th>
+										<td>{{formulir.email}}</td>
+									</tr>
+									<tr>
+										<th scope="row">No Handphone</th>
+										<td>{{formulir.tlp}}</td>
+									</tr>
+									<tr>
+										<th scope="row">Status Konfirmasi</th>
+										<td>{{formulir.konfirmasi}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>  
+	{% else %}
+	<div class="container">
+		<br><br><br><br>
+		<h1 class="display-4" align="center"><b>ERROR 404</b></h1>
+		<h2 align="center">Anda belum melakukan registrasi group hiking sama sekali</h2>
+	</div>
+	{% endif %}
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>

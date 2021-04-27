@@ -1,0 +1,199 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SIMAKSI PENDAKI</title>
+    <link rel="stylesheet" type="text/css" href="fontawsome/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static "css/cspr.css" %}">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style type="text/css">
+        .footer{
+            position: relative;
+            color: rgb(138, 138, 138); 
+            background-color: rgb(51, 51, 51); 
+            margin-top: 0; 
+            height: 44px; 
+            text-align: center; 
+            padding-top: 8px;
+            padding-bottom: 8px;
+            bottom: 0;
+        }
+        .footer a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            transition: 0.4s ease-in-out;
+        }
+        .footer a:hover{
+            color: rgb(138, 138, 138);
+        }
+        .service-title{
+            position: relative;
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+            justify-content: center;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        .service-title p{
+            font-weight: 200;
+            font-size: 18px;
+            padding-top: 10px;
+        }
+        .fug {
+            background-color: gray;
+        }
+        .fug h5 {
+            color: white;
+        }
+        .fug li a {
+            text-decoration: none;
+            color: white;
+        }
+        .fug li {
+            list-style: none;
+            padding: 5px;
+            margin-right: 7px;
+        }
+        .fug ul {
+            display: inline-flex;
+        }
+    </style>
+
+</head>
+
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#" style="font-family: 'Caveat', cursive;">SIMAKSI PENDAKI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+
+    </nav>
+
+    <div class="jumbotron">
+
+        <h1 class="display-4 font-weight-bold text-dark" style="font-size: 70px;">HELLO <br>CLIMBER !</h1>
+        <p class="text text-dark lead"><b> MUDA BERKELANA - TUA PENUH CERITA </b></p>
+        <a class="btn btn-primary btn-lg" href="{% url 'login' %}" role="button" style="margin-top: 50px; border-radius: 25px; width: 150px;">MASUK</a>
+    </div>
+
+    <!-- Seven Summit -->
+    <div> 
+        
+    
+        <div class="service-title bg-dark text-light">
+            Seven Summit<br>
+            <p>Ekspedisi Tujuh Puncak Tertinggi Di Indonesia</p>
+        </div>
+    <div style="margin-left: 8%;" class="bg-dark">
+        <div class="container p-4">
+        <div class="row">
+            <div class="col-md-6">
+        <div class="card" style="width: 85%; margin-top: 80px;">
+          <img src="https://images.bisnis-cdn.com/posts/2017/06/09/660937/puncak-jayawijaya-kabupatenpuncakwp1.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="card-text">1. Puncak Jaya Wijaya<br><br>Carstensz Pyramid atau disebut juga puncak jaya berada di Timika, Papua. Ketinggiannya mencapai 4.884 mdpl, kawasan disekitar gunung ini begitu istimewa karena kita dapat menemukan salju di negara kita yang beriklim tropis.<br><br><br></p>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+        <div class="card" style="width: 85%; height: 540px; margin-top: 80px;">
+          <img src="https://cdn.shopify.com/s/files/1/2216/6909/products/Kerinci_3_2646x.jpg?v=1582715822.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="card-text">2. Puncak Indrapura Gunung Kerinci<br><br>Gunung ini terletak di Provinsi Jambi yang berbatasan langsung dengan Provinsi Sumatera Barat. Puncak gunung kerinci berada pada ketinggian 3.805 mdpl. Dari puncak kita akan dapat menikmati pemandangan indah kota Jambi, Padang hingga Bengkulu.</p>
+          </div>
+          </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="container p-4">
+        <div class="row">
+        <div class="col-md-6">
+        <div class="card" style="width: 85%;height: 540px; margin-top: 80px;">
+          <img src="https://icstravelgroup.com/destinations/wp-content/uploads/2017/11/Rinjani-and-the-Highlands-Rinjani-Volcano.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="card-text">3. Gunung Rinjani<br><br>Gunung Rinjani berada di Lombok, Nusa Tenggara Barat dengan ketinggian 3.726 mdpl dan merupakan gunung berapi tertinggi kedua di Indonesia.<br><br><br><br><br></p>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-6">
+        <div class="card" style="width: 85%; height: 540px; margin-top: 80px;">
+          <img src="https://solehbromotour.files.wordpress.com/2018/03/paket-trekking-ke-gunung-semeru.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="card-text">4. Gunung Semeru<br><br>Gunung Semeru merupakan gunung tertinggi di pulau Jawa dengan ketinggian 3.676 mdpl dan berada di Jawa Timur. Setelah sekian lama mendaki kamu akan sampai di Ranu Kumbolo, kamu dapat mendirikan tenda di sini dan menyaksikan matahari terbit. Sesampainya di puncak Semeru semua lelahmu akan terbayar namun harus tetap hati-hati karena kadang udara di puncak beracun yang berasal dari kawah.</p>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="container p-4">
+        <div class="row">
+        <div class="col-md-6">
+        <div class="card" style="width: 85%;height: 540px; margin-top: 50px;">
+          <img src="https://cdn-brilio-net.akamaized.net/community/community-news/2019/06/03/b1e701f4f2bae4a971d6c17581a57bc1/29-image_1559093371_5cede07b63149.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="card-text">5. Puncak Rantemario Gunung Latimojong<br><br>Gunung tertinggi di Pulau Sulawesi ini berada di Kabupaten Enrekang dengan ketinggian 3.378 mdpl. Menuju ke gunung ini lumayan jauh karena butuh perjalanan 10 jam dari Makassar, namun sesampainya di puncak kamu akan disambut dengan indahnya pemndangan dari puncak tertinggi di Sulawesi ini.</p>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-6">
+        <div class="card" style="width: 85%; height: 540px;margin-top: 50px;">
+          <img src="https://cdn1-production-images-kly.akamaized.net/WuQ0G1rBWwVafT5yl61TSbYuQVE=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1757159/original/064305000_1509504829-binaiya6.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="card-text">6. Gunung Binaiya<br><br>Gunung Binaiya terletak di pulau seram dengan ketinggian 3.005 mdpl.</p>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="card" style="width: 40%;height: 540px; margin-top: 60px; margin-bottom: 50px;margin-left: 300px;">
+          <img src="https://backpackerjakarta.com/wp-content/uploads/2018/03/bukit-raya-kalimantan.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="card-text">7. Gunung Bukit Raya<br><br>Gunung Bukit Raya yang berada di Pulau Kalimantan ini merupakan gunung paling rendah diantara tujuh gunung lainnya. Gunung Bukit Raya dengan ketinggian 2.278 mdpl yang terletak di Kabupaten Katingan, Kalimantan Tengah.</p>
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="bg-dark text-center">
+    <footer class="fug">
+        <h5>Social Media</h5>
+        <ul>
+            <li> <i class="fab fa-instagram"></i>
+            <a href="http://instagram.com/rizkysaputraa.id">@rizkysaputraa.id</a> </li>
+
+            <li> <i class="fab fa-whatsapp"></i> 
+            <a href="http://wa.me/+6283834425433"> 083834425433</a></li>
+
+            <li> <i class="far fa-envelope"></i>
+            <a href="mailto:big">bigcola3000a@gmail.com</a></li>
+        </ul>
+    </footer>
+    </div>
+
+    <footer>
+    <div class="footer" style="">
+        Copyright &copy;<a href="Pendaki.html"> SIMAKSI PENDAKI 2020</a>
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>

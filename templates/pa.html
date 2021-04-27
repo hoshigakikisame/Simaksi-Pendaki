@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persyaratan Dan Aturan</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/home.css" %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(/static/img/fg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+        }
+        .container{
+            background: rgba(0,0,0,0.5);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            margin-top: 50px;
+            padding-top: 14%;
+            padding-bottom: 13%;
+            height: 500px;
+        }
+        .text{
+            padding-left: 40px;
+            padding-right: 40px;
+            font-family: calibri;
+            position: relative;
+            margin-top: -10%;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    {% include "navbar.html" %}
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+    <div class="container">
+        <div class="text">
+             <h1>PERSYARATAN DAN ATURAN</h1>
+
+        1. Telah mendaftar di website / pihak basecamp <br>
+        2. Menyertakan data diri sebelum memulai pendakian ( KTP / KARTU KELUARGA / AKTA KELAHIRAN ) <br>
+        3. Dilarang memalsukan data diri <br>
+        4. Dilarang melakukan pendakian secara ilegal <br>
+        5. Dilarang membuat jalur terobosan <br>
+        6. Dilarang merusak / mengambil tanaman <br>
+        7. Dilarang mengotori gunung <br>
+        8. Dilarang mengganggu / mengambil / membunuh satwa <br>
+        9. Wajib membawa sampah turun <br>
+        10. Membawa logistik dan alat masak sesuai kebutuhan <br>
+        11. Wajib membawa sleepingbag <br>
+        12. Dilarang mendirikan tenda di treking pendakian / shelter</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

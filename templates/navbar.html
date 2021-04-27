@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Simaksi Pendaki</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <a class="nav-link" href="/">Beranda <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       Info Pendakian
+     </a>
+     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="{% url 'info' 'persyaratan' %}">Persyaratan Aturan</a>
+      <a class="dropdown-item" href="{% url 'info' 'istilah' %}">Istilah Pendakian</a>
+      <a class="dropdown-item" href="{% url 'info' 'prepare' %}">Prepare Pendakian</a>
+    </div>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     Bukti Simaksi
+   </a>
+   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item" href="{% url 'bukti_solo' %}">Solo Hiking</a>
+    <a class="dropdown-item" href="{% url 'bukti_group' %}">Hiking Group</a>
+  </div>
+</li>
+</ul>
+<form class="form-inline my-2 my-lg-0" action="/gunung/search/" method="get">
+  <input class="search-input form-control mr-sm-2" style="position: relative;border-radius: 50px" type="search" name="query" value="{{q}}" placeholder="Search" aria-label="Search" required>
+</form>
+<button class="text-light btn btn-danger my-2 my-sm-0" style="margin-left: 10px" type="submit"><a class="text-light" href="{% url 'logout' %}">Keluar</a></button>
+</div>
+</nav>
